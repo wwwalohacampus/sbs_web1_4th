@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat : float - 중첩 박스 (부모 박스) + border</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            width: 740px;
+            height: 120px;
+            background-color: burlywood;
+            float: left;
+            border: 2px solid black;
+        }
+        .login {
+            width: 333px;
+            height: 120px;
+            float: left;
+            background-color: beige;
+            margin-left: 8px;
+            /* 로그인박스 기준에서의 간격을 주고자 왼쪽바깥쪽 여백을 지정하였으며,
+               배너박스 기준일 때 바깥쪽 여백은 margin-right가 됨
+             */
+            border: 2px solid black;
+        }
+        .main {
+            width: 1081px;  /* 배너 박스와 로그인 박스를 더한 값 */
+            height: 120px;  /* 두 개 박스의 고정 높이 */
+            margin: 0 auto;
+            /* margin 값이 2개일 때 top bottom, left right로 지정 */
+            /* block 속성을 가진 박스의 넓이가 지정되어 있을 때 margin:0 auto를 통한 가운데 배치가
+               가능하며 margin: auto auto라고 입력하면 브라우저의 위아래는 자동으로 인식되지 않고
+               좌우는 자동으로 가운데 배치 가능
+             */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- left right 박스들을 묶은 중첩 박스 -->
+    <div class="main">
+         <!-- 배너 left -->
+         <div class="banner">배너 영역</div>
+         <!-- 로그인 right -->
+         <div class="login">로그인</div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            width: 740px;
+            height: 120px;
+            background-color: burlywood; /* 배경 색상 */
+            float: left; /* 왼쪽 기준 정렬 */
+            border: 2px solid black;  /* 테두리굵기와 스타일, 색상 */
+        }
+        .login
+        {
+            width: 333px;
+            height: 120px;
+            float: left;
+            background-color: beige;
+            margin-left: 8px;
+            /* 로그인 박스 기준 왼쪽 바깥 여백 지정, 배너 박스 기준 바깥쪽 여백은 margin-right */
+            border: 2px solid black;
+        }
+        .main { 
+            width: 1081px; /* 배너 박스와 로그인 박스를 더한 값 */
+            height: 120px; /* 두 개 박스의 고정 높이 */
+            margin: 0 auto;
+            /* margin 값이 2개일 때 top bottom, left right로 지정 */
+            /* block 속성을 가진 박스의 넓이가 지정되어 있을 때 margin:0 auto를 통한 가운
+               데 배치가 가능하며 margin: auto auto라고 입력하면 브라우저의 위아래는 자동
+               으로 인식되지 않고 좌우는 자동으로 가운데 배치 가능 */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- left right 박스들을 묶은 중첩 박스 -->
+    <div class="main">
+        <!-- 배너 left -->
+        <div class="banner">배너영역</div>
+        <!-- 배너 right -->
+        <div class="login">로그인</div>
+    </div>
+    
+</body>
+</html>
